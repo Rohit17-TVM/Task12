@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="submit.html" method="GET" onsubmit="return validatePasswords()">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required><br>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="confirmPassword">Password (Confirm):</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
